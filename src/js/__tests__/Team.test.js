@@ -29,13 +29,13 @@ test('Method Team.addAll must add the group of chars into the team', () => {
   expect(newTeam.members.size).toBe(3);
 });
 
-test(`Method Team.addAll mustn't double chars when adding the group of chars into the team`, () => {
+test('Method Team.addAll mustn\'t double chars when adding the group of chars into the team', () => {
   const newTeam = new Team();
   newTeam.addAll(char1, char2, char3, char2, char3);
   expect(newTeam.members.size).toBe(3);
 });
 
-test(`Method Team.toArray must return an array of chars`, () => {
+test('Method Team.toArray must return an array of chars', () => {
   const newTeam = new Team();
   newTeam.addAll(char1, char2, char3);
   expect(newTeam.toArray()).toBeInstanceOf(Array);
